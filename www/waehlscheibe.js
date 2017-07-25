@@ -2,7 +2,7 @@ function initWaehlscheibe()
 {
    checkRegistrationStatus();
    prepareDialling();
-   $('#dial').submit(function() {
+   $('#dialform').submit(function() {
        indicateDialling();
    });
 
@@ -145,7 +145,7 @@ function handleCall()
 
     prepareDialling();
     setNumber(number);
-    $('#dial').submit();
+    $('#dial').click();
 }
 
 function prepareDialling()
