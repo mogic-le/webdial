@@ -65,14 +65,14 @@ function isHandlerRegistered()
 
 function registerPhone()
 {
-    var def = 'abc.telefon.nr';
+    var def = 'ipaddress';
     if (isPhoneRegistered()) {
         def = localStorage.getItem('telUrl')
             .replace('http://', '')
             .replace(/\/$/, '');
     }
     var res = window.prompt(
-        "IP deines Telefons (oder 'KUERZEL.telefon.nr')",
+        "IP deines Telefons",
         def
     );
     if (res == '' || res == null) {
