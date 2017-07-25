@@ -17,11 +17,12 @@
     <div class="span6">
 
      <h2>Anrufen</h2>
-     <form method="post" action="#" id="dialform" class="form-inline" target="dialtarget">
-      <input id="number" name="NUMBER" type="text" value="" class="input-medium"/>
-      <input name="active_line" type="hidden" value="1"/>
-      <input id="dial" name="DIAL" type="submit" value="Wählen" class="btn btn-success"/>
-      <input id="hangup" name="HANGUP" type="submit" value="Auflegen" class="btn btn-danger"/>
+     <form method="post" id="dialform" class="form-inline" target="dialtarget"
+           action="dial/innovaphone.php">
+      <input id="phoneurl" name="phoneurl" type="hidden" value="" />
+      <input id="number"   name="number"   type="text"   value="" class="input-medium"/>
+      <input id="dial"     name="dial"     type="submit" value="Wählen" class="btn btn-success"/>
+      <input id="hangup"   name="hangup"   type="submit" value="Auflegen" class="btn btn-danger"/>
      </form>
 
      <div class="alert alert-success" id="dialling" style="display:none">

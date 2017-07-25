@@ -151,7 +151,7 @@ function handleCall()
 
 function prepareDialling()
 {
-    $('#dial').attr('action', localStorage.getItem('telUrl'));
+    $('#phoneurl').attr('value', localStorage.getItem('telUrl'));
 }
 
 function indicateDialling()
