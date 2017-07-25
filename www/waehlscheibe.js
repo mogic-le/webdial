@@ -83,6 +83,7 @@ function registerPhone()
     localStorage.setItem('telUrl', url);
 
     checkRegistrationStatus();
+    prepareDialling();
     return true;
 }
 
